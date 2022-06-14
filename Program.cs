@@ -20,6 +20,8 @@ class Program
 
     public static string ArrayToString(string[] array)  // Метод для формирования выходной строки.
     {
+        if(array.Length == 0)
+            return "[]";
         return $"[ \"{string.Join("\", \"", array)}\" ]";
     }
 
